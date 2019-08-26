@@ -1,62 +1,11 @@
-<!DOCTYPE html>
-<html ng-app="plunker">
+<mat-list>
+    <h2>GROCERY LIST</h2>
+    <mat-list-item>
+        <button type = "button">Delete</button>Fruit</mat-list-item>
+    <mat-list-item>Fruit</mat-list-item>
+    <mat-list-item>Fruit</mat-list-item>
+    <mat-list-item>Fruit</mat-list-item>
+    <mat-list-item>Fruit</mat-list-item>
+    <mat-list-item>Fruit</mat-list-item>
 
-<head>
-  <meta charset="utf-8" />
-  <title>AngularJS Plunker</title>
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
-  <script>
-    document.write('<base href="' + document.location + '" />');
-  </script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
-
-  <!-- Angular Material Library -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
-  <script data-require="lodash.js@*" data-semver="3.10.0" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.js"></script>
-  <script src="app.js"></script>
-</head>
-
-<body ng-controller="MainCtrl as main">
-
-  <div class="container">
-    <div class="form-group" ng-if="!main.enableEdit">
-      <h2>What to do</h2>
-      <form ng-submit="main.submit(main.name)">
-        <div class="input-group">
-          <md-input-container class="md-block" flex-gt-sm>
-            <label>Add Your Task</label>
-            <input ng-model="main.name">
-          </md-input-container>
-          <!-- <input type="text" class="form-control" ng-model="main.name" placeholder="Search for..." required> -->
-          <span class="input-group-btn">
-        <md-button type="submit" class="md-raised">Add</md-button>
-        <!-- <button class="btn btn-default" type="submit"  ng-click="">Add</button> -->
-      </span>
-        </div>
-      </form>
-    </div>
-    <ul class="list-group" ng-hide="main.enableEdit">
-      <li class="list-group-item" ng-repeat="item in main.data">
-        <a><h4>{{item.name}}</h4></a>
-        <md-button class="md-raised md-primary" ng-click="main.editClick(item.name,item._id,$event)">Edit</md-button>
-        <!--<button type="button" class="btn btn-primary btn-xs" >edit</button>-->
-        <md-button class="md-raised md-warn" ng-click="main.remove(item._id,$event)">Delete</md-button>
-        <!--<button type="button" class="btn btn-danger btn-xs" >delete</button>-->
-
-      </li>
-    </ul>
-    <div class="form-group" ng-if="main.enableEdit">
-      <h1>Edit Data</h1>
-      <input class="form-control" type="text" ng-model="main.name">
-      <input class="btn btn-primary" type="button" value="update" ng-click="main.update(main.eid,main.name)">
-    </div>
-
-  </div>
-</body>
-
-</html>
+</mat-list>
