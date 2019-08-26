@@ -49,13 +49,12 @@ public class GroceryController {
 	@DeleteMapping(value= "items/{itemId}")
 	public void deleteItem(@PathVariable int id) {
 		boolean wasDeleted = groceryService.deleteItem(id);
-		if (!wasDeleted) throw new GroceryItemNotFoundException("No grocery item with id, " + id + ", found." );
-	}
+			}
 	
 	//DELETE /grocery-lists to delete a grocery list
 	@DeleteMapping(value= "grocery-lists")
 	public void deleteList(@PathVariable int id) {
 		boolean wasDeleted = groceryService.deleteList(id);
-		if(!wasDeleted) throw new GroceryListNotFoundException("No grocery list with id, " + id + ", found." );
+		
 	}
 }
