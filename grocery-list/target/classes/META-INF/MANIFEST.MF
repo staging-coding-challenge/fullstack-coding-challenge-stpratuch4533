@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: grocery-list
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Vincent Pratuch
+Implementation-Vendor-Id: grocery-list-revature
+Build-Jdk: 1.8.0_211
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/grocery-list
+Created-By: Maven Integration for Eclipse
+
